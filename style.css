@@ -47,17 +47,28 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+  height: 2.5rem;
 }
 .calculator .result-clear #result {
-  width: 80%;
+  width: 60%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  height: 100%;
 }
 .calculator .result-clear #clear {
   width: 20%;
   text-align: center;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 100%;
+}
+.calculator .result-clear #remove {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.3rem;
+  background-color: var(--buttons-color);
 }
 .calculator .buttons {
   display: flex;
@@ -84,4 +95,17 @@ small {
   margin: 1rem 15px 0 15px;
   color: var(--clear-equal-color);
   text-align: center;
+}
+.btn {
+  margin-top: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Goldman", cursive;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: var(--clear-equal-color);
+}
+.btn:active {
+  transform: scale(1.1);
 }
